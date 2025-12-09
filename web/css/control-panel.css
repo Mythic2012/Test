@@ -1,0 +1,53 @@
+main {
+    margin: 20px;
+    display: block;
+}
+
+.deleteBtn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 100px;
+    margin-top: 20px
+}
+
+.wrapper {
+    display: block;
+    margin: 20px auto 0 auto;
+    margin-right: auto;
+    margin-left: auto;
+    width: 250px;
+}
+
+form {
+    display: block;
+}
+
+.posterTitle, h1 {
+    text-align: center;
+    margin: 0 0 10px
+}
+
+.controlPoster {
+    height: 350px;
+    width: 250px;
+}
+
+.container {
+    background-color: #d99b2d;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+main div form input#poster {
+    width: 200px;
+}
+
+label {
+    width: 80px;
+    display: inline-block;
+}

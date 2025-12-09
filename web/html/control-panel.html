@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/control-panel.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="/js/control-panel.js"></script>
+    </head>
+    <body onload="fetchPosters()">
+
+        <img src="./images/icons/logo.jfif" id="logo">
+
+        <h1>TV Display Control Panel</h1>
+
+        <hr></hr>
+        <main>
+            <div id="posters"></div>
+
+            <div class="container">
+                <h2>Upload Posters</h2>
+                <form action="/upload-poster" method="POST" enctype="multipart/form-data">
+                    <label for="poster">Upload Poster:</label><br>
+                    <input type="file" id="poster" name="poster" accept="image/*" required><br><br>
+                    <label for="nickname">Enter Name:</label><br>
+                    <input type="nickname" name="nickname" required><br><br>
+                    
+                    <button type="submit">Upload</button>
+                </form>
+            </div>
+
+            <div class="container">
+                <h2>Update Prayer Times</h2>
+                <form action="/update-prayer-times" enctype="multipart/form-data">
+                    <label for="fajr_begins">Fajr:</label>
+                    <input type="text" name="fajr_begins" placeholder="Adhan" size="10">
+                    <input type="text" name="fajr_jamah" placeholder="Iqamah" size="10"><br>
+                    <label for="dhuhr_begins">Dhuhr:</label>
+                    <input type="text" name="dhuhr_begins" placeholder="Adhan" size="10">
+                    <input type="text" name="dhuhr_jamah" placeholder="Iqamah" size="10"><br>        
+                    <label for="asr_mithl_2">Asr:</label>
+                    <input type="text" name="asr_mithl_2" placeholder="Adhan" size="10">
+                    <input type="text" name="asr_jamah" placeholder="Iqamah" size="10"><br>
+                    <label for="maghrib_begins">Maghrib:</label>
+                    <input type="text" name="maghrib_begins" placeholder="Adhan" size="10">
+                    <input type="text" name="maghrib_jamah" placeholder="Iqamah" size="10"><br>
+                    <label for="isha_begins">Isha:</label>
+                    <input type="text" name="isha_begins" placeholder="Adhan" size="10">
+                    <input type="text" name="isha_jamah" placeholder="Iqamah" size="10"><br><br>
+                    <button type="submit">Change</button>
+                    <h4>*Note: These changes will only last the day that you change them. They will revert back to the original website timing after midnight.</h4>
+                </form>
+            </div>
+
+        </main>
+    </body>
+</html>

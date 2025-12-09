@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "Canva Sans";
+    src: url(canva-sans-regular.otf)
+}
+
+* {
+    font-family: "Canva Sans";
+}
+
+#logo {
+    height: 225px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.containers {
+    background-color: #db9e34;
+    height: 100%;
+    border-radius: 25px;
+    color: white;
+}
+
+#twoContainer {
+    width: 95%;
+    height: 95%;
+    border-radius: 15px;
+    background-color: white;
+    margin: 2.1% auto 0 auto;
+    display: block;
+}
+
+hr {
+    width: 97.5%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    height: 77%;
+    margin: 20px;
+}
+
+#clock {
+    font-size: 140pt;
+    /*font-size: 9vw;*/
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+#clockSuffix {
+    /* font-size: 4.5vw */
+    font-size: 70pt;
+    font-weight: 500;
+}
+
+table {
+    font-size: 50pt;
+    /*font-size: 3vw;*/
+    color: white;
+    margin-left: 50px;
+}
+
+th {
+    width: 330px
+}
+
+td {
+    width: 300px;
+}
+
+.time {
+    text-align: center;
+}
+
+#timeSuffix {
+    font-size: 30pt;
+    /*font-size: 2vw;*/
+}
+
+.poster {
+    margin: 0 auto 0 auto;
+    padding: 35px;
+    display: block;
+}
+
+.arrow {
+    width: 80px;
+    display: inline;
+    margin-top: 37.5%;
+}
+
+#left {
+    float: left;
+    margin-top: 39%;
+}
+
+#right {
+    float: right;
+    margin-top: 39%;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
+.name {
+    width: 600px;
+}

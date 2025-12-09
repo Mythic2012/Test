@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/index.js"></script>
+    </head>
+
+    <body onload="main()">
+        <img src="./images/icons/logo.jfif" id="logo">
+
+        <hr></hr>
+
+        <main>
+            <div class="containers">
+                <h1 id="clock">00:00:00</h1>
+                
+                <table>
+                    <tr>
+                        <th></th>
+                        <th><u>Adhan</u></th>
+                        <th><u>Iqamah</u></th>
+                    </tr>
+                    <tr>
+                        <td>Fajr</td>
+                        <td class="time" id="fajr_adhan"><a id="timeSuffix">am</a></td>
+                        <td class="time" id="fajr_iqamah"><a id="timeSuffix">am</a></td>
+                    </tr>
+                    <tr>
+                        <td>Dhuhr</td>
+                        <td class="time" id="dhuhr_adhan"><a id="timeSuffix">pm</a></td>
+                        <td class="time" id="dhuhr_iqamah"><a id="timeSuffix">pm</a></td>
+                    </tr>
+                    <tr>
+                        <td>Asr</td>
+                        <td class="time" id="asr_adhan"><a id="timeSuffix">pm</a></td>
+                        <td class="time" id="asr_iqamah"><a id="timeSuffix">pm</a></td>
+                    </tr>
+                    <tr>
+                        <td>Maghrib</td>
+                        <td class="time" id="maghrib_adhan"><a id="timeSuffix">pm</a></td>
+                        <td class="time" id="maghrib_iqamah"><a id="timeSuffix">pm</a></td>
+                    </tr>
+                    <tr>
+                        <td>Isha</td>
+                        <td class="time" id="isha_adhan"><a id="timeSuffix">pm</a></td>
+                        <td class="time" id="isha_iqamah"><a id="timeSuffix">pm</a></td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="containers">
+                <div id="twoContainer"> 
+                    <img src="images/icons/arrow-left.png" class="arrow" id="left" onclick="changeImage(1)">
+                    <img src="images/icons/arrow-right.png" class="arrow"  id="right" onclick="changeImage(1)">
+                </div>
+            </div>
+        </main>
+
+    </body>
+
+</html>
