@@ -12,7 +12,7 @@ async function fetchPosters(){
         }
     }
 
-    await fetch("http://localhost:3000/fetch-posters")
+    await fetch("/fetch-posters")
     .then(function(res){ return res.text()})
     .then(function(data){
         posters = JSON.parse(data)
